@@ -1,18 +1,17 @@
-// LET AND CONST
-
+LET AND CONST
 // ES5
 // changing value of a var is fine
 var name = 'Danny Vega';
 var age = 29;
 name = 'Wahtholamew';
-// console.log(name);
+console.log(name);
 
 // ES6
 // you cant change the value of a const
 const nombre = 'Danny Vega';
 let ano = 29;
-// nombre = 'Wahh'; // TypeError: Assignment to constant variable.
-// console.log(nombre);
+nombre = 'Wahh'; // TypeError: Assignment to constant variable.
+console.log(nombre);
 
 // ES5
 // variables are function scoped
@@ -53,54 +52,3 @@ for(var x = 0; x < 5; x++){
 }
 // console.log(x);
 // for loop would print 0,1,2,3,4 and console.log on 54 would print 5 because vars are function scoped
-
-
-
-
-
-
-
-
-
-
-// BLOCKS AND IIFES
-
-// ES6
-// achieving data privacy
-{
-  const a = 1;
-  let b = 23;
-  var c = 'hi';
-}
-
-// console.log(a); // ReferenceError: a is not defined
-// console.log(b); // wont even get to this line
-// console.log(c); // this will print 'hi' because variables are function scoped, not blocked
-
-(function(d){
-  var d = 3;
-  // console.log(`how you can expose a private variable -- return from inside IIFE`);
-})();
-// console.log(d); // this will print d is not defined
-
-
-
-
-
-
-
-
-
-
-// ES6 String Methods
-let firstName = 'John';
-let lastName = 'Smith';
-const john = `${firstName} ${lastName}`;
-
-console.log(john.startsWith('J'));
-console.log(john.endsWith('th'));
-console.log(john.includes('oh'));
-console.log(`${firstName} `.repeat(5));
-
-
-
