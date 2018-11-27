@@ -59,9 +59,9 @@ const isFullerAge = (...ages) =>{
 }
 isFullerAge(18, 34, 14, 21, 15)
 
-Difference between spread operator and rest parameters:
-  - spread operator: used in function invocation
-  - rest parameters: used in function declaration to take in an arbitrary number of arguments and transform into an array
+// Difference between spread operator and rest parameters:
+//   - spread operator: used in function invocation
+//   - rest parameters: used in function declaration to take in an arbitrary number of arguments and transform into an array
 
 Passing in more parameters to function
 function isFullAge(limit){
